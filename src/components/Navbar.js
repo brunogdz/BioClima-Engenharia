@@ -19,7 +19,7 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/contact">Contato</Button>
+                <Button to="/contact" primary='true'>Contato</Button>
             </NavBtn>
         </Nav>
     )
