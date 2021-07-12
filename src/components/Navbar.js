@@ -1,18 +1,18 @@
 import React from 'react';
-import styled, {css} from 'styled-components/macro';
-import {Link} from 'react-router-dom';
+import styled, { css } from 'styled-components/macro';
+import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
-import {FaBars} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <Nav>
             <Logo to="/">Bio Clima Engenharia</Logo>
-            <MenuBars />
+            <MenuBars onClick={toggle} />
             <NavMenu>
-                {menuData.map((item,index) => (
+                {menuData.map((item, index) => (
                     <NavMenuLinks to={item.link} key={index}>
                         {item.title}
                     </NavMenuLinks>

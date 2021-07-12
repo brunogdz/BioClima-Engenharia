@@ -10,19 +10,19 @@ const Hero = ({ slides }) => {
     const length = slides.length;
     const timeout = useRef(null);
 
-    // useEffect(() => {
-    //     const nextSlide = () => {
-    //         setAtual(atual => (atual === length - 1 ? 0 : atual + 1));
-    //     };
-    //     timeout.current = setTimeout(nextSlide, 3000);
+    useEffect(() => {
+        const nextSlide = () => {
+            setAtual(atual => (atual === length - 1 ? 0 : atual + 1));
+        };
+        timeout.current = setTimeout(nextSlide, 3000);
 
-    //     return function () {
-    //         if (timeout.atual) {
-    //             clearTimeout(timeout.atual)
-    //         }
-    //     };
-    // }, [atual, length]
-    // );
+        return function () {
+            if (timeout.atual) {
+                clearTimeout(timeout.atual)
+            }
+        };
+    }, [atual, length]
+    );
 
     // Incrementa e zera quando chega no numero de dados
     const nextSlide = () => {
