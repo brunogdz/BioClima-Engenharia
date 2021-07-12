@@ -33,7 +33,7 @@ const Nav = styled.nav`
     z-index: 1;
     position: fixed;
     width: 100%;
-    background: #000;
+    background: #023e80;
 `;
 
 const NavLink = css`
