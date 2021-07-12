@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5'
 import styled, { css } from 'styled-components/macro';
@@ -6,30 +6,72 @@ import { Button } from './Button';
 
 
 const Hero = ({ slides }) => {
+    const [atual, setAtual] = useState(0);
+    const length = slides.length;
+    const timeout = useRef(null);
+
+    // useEffect(() => {
+    //     const nextSlide = () => {
+    //         setAtual(atual => (atual === length - 1 ? 0 : atual + 1));
+    //     };
+    //     timeout.current = setTimeout(nextSlide, 3000);
+
+    //     return function () {
+    //         if (timeout.atual) {
+    //             clearTimeout(timeout.atual)
+    //         }
+    //     };
+    // }, [atual, length]
+    // );
+
+    // Incrementa e zera quando chega no numero de dados
+    const nextSlide = () => {
+        if(timeout.current){
+            clearTimeout(timeout.current)
+        }
+        setAtual(atual === length - 1 ? 0 : atual + 1);
+        // console.log(atual)
+    };
+
+    const prevSlide = () => {
+        if(timeout.current){
+            clearTimeout(timeout.current)
+        }
+        setAtual(atual === 0 ? length - 1 : atual - 1);
+        // console.log(atual)
+    }
+
+    if (!Array.isArray(slides) || slides.length <= 0) {
+        return null
+    }
+
     return (
         <HeroSection>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return (
                         <HeroSlide key={index}>
-                            <HeroSlider>
-                                <HeroImage src={slide.image} alt={slide.alt}/>
-                                <HeroContent>
-                                    <h1>{slide.title}</h1>
-                                    <Button to={slide.path} primary='true'
-                                        css={`max-width: 160px;`}
-                                    >
-                                        {slide.label}
-                                        <Arrow />
-                                    </Button>
-                                </HeroContent>
-                            </HeroSlider>
+                            {index === atual && (
+                                <HeroSlider>
+                                    <HeroImage src={slide.image} alt={slide.alt} />
+                                    <HeroContent>
+                                        <h1>{slide.title}</h1>
+                                        <Button to={slide.path} primary='true'
+                                            css={`max-width: 160px;`}
+                                        >
+                                            {slide.label}
+                                            <Arrow />
+                                        </Button>
+                                    </HeroContent>
+                                </HeroSlider>
+                            )}
+
                         </HeroSlide>
                     );
                 })}
                 <SliderButtons>
-                    <PrevArrow />
-                    <NextArrow />
+                    <PrevArrow onClick={prevSlide} />
+                    <NextArrow onClick={nextSlide} />
                 </SliderButtons>
             </HeroWrapper>
         </HeroSection>
@@ -116,7 +158,10 @@ const HeroContent = styled.div`
     }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)``;
+const Arrow = styled(IoMdArrowRoundForward)`
+    margin-left: 0.5rem;
+`;
+
 const SliderButtons = styled.div`
     position: absolute;
     bottom: 50px;
@@ -146,7 +191,7 @@ const PrevArrow = styled(IoArrowBack)`
     ${arrowButtons}
 `;
 
-const NextArrow  = styled(IoArrowForward)`
+const NextArrow = styled(IoArrowForward)`
     ${arrowButtons}
 `;
 
