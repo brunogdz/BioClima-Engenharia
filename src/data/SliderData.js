@@ -7,28 +7,28 @@ export const SliderData = [
     {
         title: 'Comprometimento',
         path: '/about',
-        label: 'View Home',
+        label: 'Saiba mais',
         image: Image1,
         alt: 'Meeting'
     },
     {
         title: 'Inovação',
         path: '/about',
-        label: 'View Home',
+        label: 'Saiba mais',
         image: Image2,
         alt: 'Inovation'
     },
     {
         title: 'Sem parar',
         path: '/about',
-        label: 'View Home',
+        label: 'Saiba mais',
         image: Image3,
         alt: 'Do not stopping'
     },
     {
         title: 'Planejamento',
         path: '/about',
-        label: 'View Home',
+        label: 'Saiba mais',
         image: Image4,
         alt: 'Planejamento'
     },

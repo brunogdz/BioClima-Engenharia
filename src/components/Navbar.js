@@ -30,10 +30,10 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     width: 100%;
-    background: #023e80;
+    /* background: #023e80; */
 `;
 
 const NavLink = css`
