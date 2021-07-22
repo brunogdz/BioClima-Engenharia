@@ -59,6 +59,7 @@ const Logo = styled(Link)`
     font-size: 24px;
     img{
         width: 50%;
+        
     }
 `;
 
