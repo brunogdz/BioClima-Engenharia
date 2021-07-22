@@ -34,7 +34,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-columns: 1fr;
-        grid-template-rows: 600px;
+        grid-template-rows: 700px;
         padding: 2rem calc((100vw - 1300px) / 2);
     }
 `;
