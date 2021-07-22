@@ -7,6 +7,11 @@ import {Link} from 'react-router-dom';
 
 
 const DropDown = ({isOpen, toggle}) => {
+    function raiseOnClick(){
+        const url = 'https://api.whatsapp.com/send?phone=5527997871146&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AAs.%20';
+        window.open(url, '_blank');
+    }
+
     return (
         <DropdownContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -21,7 +26,7 @@ const DropDown = ({isOpen, toggle}) => {
                     ))}
                 </DropdownMenu>
                 <BtnWrap>
-                    <Button primary="true" round="true" big="true" to="/contact">
+                    <Button primary="true" round="true" big="true" to="" onClick={raiseOnClick}>
                         Contato
                     </Button>
                 </BtnWrap>
