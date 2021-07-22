@@ -7,6 +7,12 @@ import { FaBars } from 'react-icons/fa'
 
 
 const Navbar = ({ toggle }) => {
+
+    function raiseOnClick(){
+        const url = 'https://api.whatsapp.com/send?phone=5527997871146&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AAs.%20';
+        window.open(url, '_blank');
+    }
+
     return (
         <Nav>
             <Logo to="/">Bio Clima Engenharia</Logo>
@@ -19,7 +25,7 @@ const Navbar = ({ toggle }) => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/contact" primary='true'>Contato</Button>
+                <Button to="" primary='true' onClick={raiseOnClick}>Contato</Button>
             </NavBtn>
         </Nav>
     )
