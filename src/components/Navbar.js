@@ -9,7 +9,7 @@ import logo from '../assets/BioClima.svg'
 const Navbar = ({ toggle }) => {
 
     function raiseOnClick() {
-        const url = 'https://api.whatsapp.com/send?phone=5527997871146&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AAs.%20';
+        const url = 'https://api.whatsapp.com/send?phone=5527123456789&text=Ol%C3%A1%2C%20gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AAs.%20';
         window.open(url, '_blank');
     }
 
