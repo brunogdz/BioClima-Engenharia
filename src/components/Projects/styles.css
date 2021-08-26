@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+/* import Proj1 from '../../assets/projetos/projeto1.jpeg';
+import Proj2 from '../../assets/projetos/projeto2.jpeg';
+import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
+
+
+.Project{
+    flex: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover;
+    background-color: #f2f2f2
+    ;
+}
+
+.Project .Title{
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Project .Title h2{
+    font-family: "Cinzel", sans-serif;
+    font-size: 40px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+    padding: 30px 45px 0;
+}
+
+.Project .Projects{
+    flex: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-size: cover;
+    align-items: center;
+    /* padding: 0 100px; */
+    width: 50%;
+     
+}
+
+.Project .Projects .Project1{
+    height: 300px;
+    width: 300px;
+    background: url('../../assets/projetos/projeto1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Project .Projects .Project1 .name{
+    z-index: 2;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 200px;
+    padding-top: 20px;
+}
+
+.Project .Projects .Project1 .popup-button{
+    z-index: 2;
+    color: #fff;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+/* z-index: 2;
+color: #fff;
+position: absolute;
+margin-left: 120px;
+padding-top: 250px; */
+
+.Project .Projects .Project2{
+    height: 300px;
+    width: 300px;
+    background: url('../../assets/projetos/projeto2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Project .Projects .Project2 .name{
+    z-index: 2;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 200px;
+    padding-top: 20px;
+}
+
+.Project .Projects .Project2 .popup-button{
+    z-index: 2;
+    color: #fff;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Project .Projects .Project3{
+    height: 300px;
+    width: 300px;
+    background: url('../../assets/projetos/projeto3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Project .Projects .Project3 .name{
+    z-index: 2;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 200px;
+    padding-top: 20px;
+}
+
+.Project .Projects .Project3 .popup-button{
+    z-index: 2;
+    color: #fff;
+    /* position: absolute; */
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Projects .popup-view{
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Projects .popup-view.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.Projects .popup-card{
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.Projects .popup-card .project-img{
+    z-index: 2;
+    background: #1D212B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Projects .popup-card .project-img img{
+    z-index: 2;
+    position: relative;
+    width: 300px;
+    /* height: 300px; */
+    left: -50px;
+    border-radius: 30px;
+}
+
+.Projects .popup-card .info{
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 10px;
+}
+.Projects .popup-card .close-btn{
+    color: #555;
+    z-index: 3;
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.Projects .popup-card .info h2{
+    font-family: "Cinzel", sans-serif;
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.Projects .popup-card .info h3{
+    font-size: 32px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.Projects .popup-card .info p{
+    margin: 10px;
+    font-size: 15px;
+}
+
+@media(max-width: 900px){
+    .Projects .popup-card{
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+
+    .Projects .popup-card .project-img{
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .Projects .popup-card .project-img img{
+        left: initial;
+        max-width: 100%;
+        width: 50%;
+    }
+
+    .Projects .popup-card .info{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        padding-top: 100px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .Projects .popup-card .info h2{
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+    .Projects .popup-card .info h3{
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    .Projects .popup-card .info p{
+        margin: 5px;
+        font-size: 13px;
+    }
+    .Projects .popup-card .close-btn{
+        z-index: 4;
+        right: 0px;
+    }
+
+}
+@media(max-width: 450px){
+    .Project .Projects{
+        width: 100%;
+    }
+    .Projects .popup-card .info{
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,45 @@
+/* FEITO 
+        POR 
+            HACKER MAN 
+                DIMITRI 
+
+    SE APAGAR MAMOU 
+    G? 3? X? X? X? X?
+    
+*/
+
+.carousel-wrapper {
+    height: (100vh - 90px);
+}
+
+.carousel-wrapper .Img-Slide {
+    min-width: 50% !important;
+    min-height: calc(100vh - 90px) !important;
+    /* padding-top: 90px; */
+    object-fit: cover;
+}
+
+.carousel-wrapper .Img-Slide img {
+    width: 100% !important;
+    height: 100vh !important;
+    object-fit: cover;
+}
+
+.carousel .slide {
+    align-items: center;
+}
+
+.carousel .slide .legend { 
+    align-items: center;
+    /* width: 40%; */
+    /* background: #000000b3; */
+    background: transparent;
+    font-size: 60px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 768px){
+    .carousel .slide .legend{
+        font-size: 20px;
+    }
+}

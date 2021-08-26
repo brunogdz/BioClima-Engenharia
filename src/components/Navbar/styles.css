@@ -1,0 +1,64 @@
+body{
+    min-height: 1000px;
+}
+
+.navbar{
+    background: transparent;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 60px;
+    height: 90px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    /* background-color: #123141; */
+    
+}
+
+.navbar.active{
+    background-color: #123141;
+}
+
+.logo{
+    width: 16em;
+}
+
+.navigation{
+    position: relative;
+    display: flex;
+    
+}
+
+@media screen and (max-width: 768px){
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    
+}
+
+.navigation li{
+    list-style: none;
+    margin-left: 30px;
+
+    
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navigation li a:hover{
+    color: #e17f1c;
+}

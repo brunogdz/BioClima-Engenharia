@@ -1,28 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
+import About from './components/AboutSection';
+import ImageSlider from './components/ImageSlider';
 import Navbar from './components/Navbar';
-import GlobalStyle from './globalStyles'
-import Hero from './components/Hero';
-import { SliderData } from './data/SliderData';
-import DropDown from './components/DropDown';
-import InfoSection from './components/InfoSection';
-import { InfoData, InfoData2 } from './data/InfoData';
+import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 function App() {
-  const [isOpen,setIsOpen] = useState(false)
-
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-
+  
   return (
-    <>
-      <GlobalStyle />
-      <Navbar toggle={toggle}/>
-      <DropDown isOpen={isOpen}  toggle={toggle}/>
-      <Hero slides={SliderData} />
-      <InfoSection {...InfoData}/>
-      <InfoSection {...InfoData2}/>
-    </>
+    <div className="App">
+      <Navbar/>
+      <ImageSlider/>
+      <About/>
+      <Projects/>
+      <Footer/>
+    </div>
   );
 }
 
