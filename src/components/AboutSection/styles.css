@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
-.About{
-    /* height: 100vh; */
-    /* min-height: 100vh; */
-}
-
 .About .About-Separator{
     width: 100%;
     background: yellow;

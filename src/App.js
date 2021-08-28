@@ -4,7 +4,7 @@ import ImageSlider from './components/ImageSlider';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
-
+import Feedback from './components/Feedback';
 function App() {
   
   return (
@@ -13,6 +13,7 @@ function App() {
       <ImageSlider/>
       <About/>
       <Projects/>
+      <Feedback/>
       <Footer/>
     </div>
   );
