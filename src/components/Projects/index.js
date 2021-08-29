@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './styles.css';
 import Proj1 from '../../assets/projetos/projeto1.jpeg';
 import Proj2 from '../../assets/projetos/projeto2.jpeg';

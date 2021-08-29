@@ -35,7 +35,7 @@ const Feedback = () => {
     window.addEventListener('scroll', reveal)
     return (
         <div className="Feedback">
-            <h1>FeedBack</h1>
+            <h1 style={{    fontFamily: "Cinzel, sans-serif", fontSize: "40px"}}>FeedBack</h1>
             <div className="box-info reveal" style={{ display: "flex", justifyContent: "center" }}>
                 <div style={{ width: '50%' }}>
                     <Slider>

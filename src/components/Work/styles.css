@@ -1,0 +1,16 @@
+.Work{
+    position: relative;
+    padding: 90px 0px 50px;
+}
+
+.container{
+    position: static;
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.container .Textos h1{
+    font-family: "Cinzel", sans-serif;
+    font-size: 40px;
+}

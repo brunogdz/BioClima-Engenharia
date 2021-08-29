@@ -27,7 +27,7 @@ const About = () => {
     return (
         <div className="About">
             <div className="About-Separator">
-                <h2 className="title">A Bio Clima Engenharia agradece a sua presença!</h2>
+                <h2 className="title">A Bio Clima Engenharia agradece a sua visita!</h2>
             </div>
             <div className="About-Informations reveal">
                 <div className="Text">
