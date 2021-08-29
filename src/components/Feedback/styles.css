@@ -6,6 +6,11 @@
     padding: 100px 0;
 }
 
+.Feedback h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .box-info{
     position: static;
     max-width: 1200px;
