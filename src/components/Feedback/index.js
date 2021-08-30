@@ -35,31 +35,44 @@ const Feedback = () => {
     window.addEventListener('scroll', reveal)
     return (
         <div className="Feedback">
-            <h1 style={{    fontFamily: "Cinzel, sans-serif", fontSize: "40px"}}>FeedBack</h1>
+            <h1 style={{ fontFamily: "Cinzel, sans-serif", fontSize: "40px" }}>FeedBack</h1>
             <div className="box-info reveal" style={{ display: "flex", justifyContent: "center" }}>
                 <div style={{ width: '50%' }}>
                     <Slider>
-                        <Card img={image1} />
-                        <Card img={image2} />
-                        <Card img={image3} />
-                        <Card img={image4} />
+                        <Card
+                            img={image1}
+                            text="A avaliação de desempenho é chave para entregar feedback construtivo a gestores e colaboradores. Contudo, não saber o que dizer durante um processo de avaliação pode fazer que ele não seja aproveitado ao máximo. Nunca vi melhores!!"
+                            name="Luciana Furtado"
+                            company="Arcelor Mittal"
+                        />
+                        <Card
+                            img={image2}
+                            text="Ótimo serviço, superou minhas expectativas!"
+                            name="Marcela Figueredo"
+                            company="Vale"
+                        />
+                        <Card
+                            img={image3}
+                            text="Atendimento de ponta! Serviço rápido e de primeira qualidade! "
+                            name="Eduardo Costa"
+                            company="MRV - Grupo Engenharia"
+                        />
+                        <Card
+                            img={image4}
+                            text="Recomendo, simplesmente sem palavras! O melhor atendimento, equipe de primeira, muito atenciosa e superou minhas expectativas!"
+                            name="Marcos Mion"
+                            company="Palácio do Café"
+                        />
                     </Slider>
                 </div>
 
-                {/* <ul className="control" id="custom-control">
-                    <li class="prev">
-                        <i className="fas fa-angle-left fa-2x"></i>
-                    </li>
-                    <li class="next">
-                        <i className="fas fa-angle-right fa-2x"></i>
-                    </li>
-                </ul> */}
+
             </div>
         </div>
     );
 }
 
-const Card = ({ img }) => {
+const Card = (props) => {
     return (
         <div style={{
             display: 'flex',
@@ -70,7 +83,7 @@ const Card = ({ img }) => {
 
         }}
         >
-            <Avatar imgProps={{ style: { borderRadius: "50%" } }} src={img} style={{ width: 130, height: 130, border: "1px solido lightgray", padding: 5, }} />
+            <Avatar imgProps={{ style: { borderRadius: "50%" } }} src={props.img} style={{ width: 130, height: 130, border: "1px solido lightgray", padding: 5, }} />
             <p style={{
                 fontStyle: "italic",
                 fontWeight: 400,
@@ -81,7 +94,8 @@ const Card = ({ img }) => {
                 lineHeight: "1.6em",
             }}
             >
-                A avaliação de desempenho é chave para entregar feedback construtivo a gestores e colaboradores. Contudo, não saber o que dizer durante um processo de avaliação pode fazer que ele não seja aproveitado ao máximo. Nunca vi melhores!!</p>
+                {props.text}
+            </p>
             <p style={{
                 color: "#191919",
                 fontSize: "12px",
@@ -92,7 +106,7 @@ const Card = ({ img }) => {
                 fontFamily: 'Montserrat, sans-serif',
             }}
             >
-                <span style={{ fontWeight: 750, color: "#191919" }}>Paula Gomes</span>, Consultora AMV
+                <span style={{ fontWeight: 750, color: "#191919" }}>{props.name}</span> - {props.company}
             </p>
         </div>
     )

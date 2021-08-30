@@ -10,7 +10,110 @@
     margin: 0 auto;
 }
 
+.container .Textos{
+    position: relative;
+    padding-bottom: 40px;
+}
+
 .container .Textos h1{
     font-family: "Cinzel", sans-serif;
     font-size: 40px;
+    position: relative;
+    color: #242424;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: center;
+}
+.container .Textos .sub-text{
+    position: relative;
+    font-size: 18px;
+    margin-top: 15px !important;
+    line-height: 1.8em;
+}
+
+.container .Textos .sub-text p{
+    text-align: justify;
+    font-size: 18px;
+    margin: 0 17px;
+    line-height: 1.4rem;
+    padding-bottom: 10px;
+    text-indent: 15px;
+}
+
+/* Tipos */
+.container .Tipos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,311px);
+    grid-gap: 20px 15px;
+    justify-content: space-between;
+}
+
+.container .Tipos .service{
+    position: relative;
+    margin-bottom: 48px;
+    /* display: flex; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* .container .Tipos .service .content{
+    /* height: 290px;
+    width: 400px; */
+*/
+
+
+.container .Tipos .service .content .image{
+    background-color: #242424;
+    overflow: hidden;
+    border-bottom: 3px solid #123141;
+}
+.container .Tipos .service .content .image img{
+    position: relative;
+    width: 100%;
+    display: block;
+    transition: all 0.5s ease;
+}
+col-md-4 col-sm-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+@media(max-width: 450px){
+    .container .Textos h1{
+        font-size: 26px;
+    }
+    .col-xs-12{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .container .Textos .sub-text p{
+        font-size: 18px;
+    }
+    .col-sm-6{
+        width: 50%;
+    }
+    .col-md-4{
+        float: left;
+    }
+}
+
+@media(max-width: 1140px){
+    .container .Textos h1{
+        font-size: 32px;
+    }
+    .col-md-4{
+        width: (100% / 3);
+    }
+    .col-sm-6{
+        float: left;
+    }
+
 }
