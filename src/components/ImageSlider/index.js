@@ -6,6 +6,8 @@ import Image3 from '../../assets/meeting.jpg';
 import Image4 from '../../assets/industry.jpg';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import styled from 'styled-components';
 const ImageSlider = () => {
     return (
@@ -21,17 +23,16 @@ const ImageSlider = () => {
                 transitionTime="500ms"
             >
                 <div className="Img-Slide">
-                    <img alt="" src={Image1} />
-                    {/* <p className="legend">Planejamento</p> */}
+                    <LazyLoadImage alt="" effect="blur" src={Image1} />
                 </div>
                 <div className="Img-Slide">
-                    <img alt="" src={Image2} />
+                    <LazyLoadImage alt="" effect="blur" src={Image2} />
                 </div>
                 <div className="Img-Slide">
-                    <img alt="" src={Image3} />
+                    <LazyLoadImage alt="" effect="blur" src={Image3} />
                 </div>
                 <div className="Img-Slide">
-                    <img alt="" src={Image4} />
+                    <LazyLoadImage alt="" effect="blur" src={Image4} />
                 </div>
 
             </Carousel>
