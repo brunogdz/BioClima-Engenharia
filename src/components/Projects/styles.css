@@ -18,7 +18,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     justify-content: center;
     width: 100%;
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
 }
 
 .Project .Title h2{
@@ -39,7 +39,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     align-items: center;
     /* padding: 0 100px; */
     width: 50%;
-    color: #fff;
+    /* color: #fff; */
      
 }
 
@@ -63,6 +63,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     font-size: 32px;
     padding-bottom: 200px;
     padding-top: 20px;
+    color: #fff;
 }
 
 .Project .Projects .Project1 .popup-button{
@@ -99,6 +100,7 @@ padding-top: 250px; */
     font-size: 32px;
     padding-bottom: 200px;
     padding-top: 20px;
+    color: #fff;
 }
 
 .Project .Projects .Project2 .popup-button{
@@ -120,6 +122,7 @@ padding-top: 250px; */
     border-radius: 20px;
     margin-bottom: 20px;
     text-align: center;
+    
 }
 
 .Project .Projects .Project3 .name{
@@ -130,11 +133,12 @@ padding-top: 250px; */
     font-size: 32px;
     padding-bottom: 200px;
     padding-top: 20px;
+    color: #fff;
 }
 
 .Project .Projects .Project3 .popup-button{
     z-index: 2;
-    color: #fff;
+    /* color: #fff; */
     /* position: absolute; */
     width: 100%;
     text-align: center;
@@ -218,17 +222,20 @@ padding-top: 250px; */
     font-size: 40px;
     line-height: 20px;
     margin: 10px;
+    color: black;
 }
 
 .Projects .popup-card .info h3{
     font-size: 32px;
     line-height: 20px;
     margin: 10px;
+    color: black;
 }
 
 .Projects .popup-card .info p{
     margin: 10px;
     font-size: 15px;
+    color: black;
 }
 
 @media(max-width: 900px){
@@ -278,6 +285,7 @@ padding-top: 250px; */
     .Projects .popup-card .close-btn{
         z-index: 4;
         right: 0px;
+        color: black;
     }
 
 }
