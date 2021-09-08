@@ -14,25 +14,25 @@ const ImageSlider = () => {
         <div className="carousel-wrapper">
             <Carousel
                 width="100%"
-                autoPlay showArrows={true} 
-                infiniteLoop={true} 
+                autoPlay showArrows={true}
+                infiniteLoop={true}
                 useKeyboardArrows={true}
-                showStatus={false} 
-                showThumbs={false} 
-                
+                showStatus={false}
+                showThumbs={false}
+
                 transitionTime="500ms"
             >
                 <div className="Img-Slide">
-                    <LazyLoadImage alt="" effect="blur" src={Image1} />
+                    <LazyLoadImage alt="" effect="blur" height="100%" width="100%" src={Image1} />
                 </div>
                 <div className="Img-Slide">
-                    <LazyLoadImage alt="" effect="blur" src={Image2} />
+                    <LazyLoadImage alt="" effect="blur" height="100%" width="100%" src={Image2} />
                 </div>
                 <div className="Img-Slide">
-                    <LazyLoadImage alt="" effect="blur" src={Image3} />
+                    <LazyLoadImage alt="" effect="blur" height="100%" width="100%" src={Image3} />
                 </div>
                 <div className="Img-Slide">
-                    <LazyLoadImage alt="" effect="blur" src={Image4} />
+                    <LazyLoadImage alt="" effect="blur" height="100%" width="100%" src={Image4} />
                 </div>
 
             </Carousel>

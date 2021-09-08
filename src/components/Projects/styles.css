@@ -10,8 +10,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     flex-wrap: wrap;
     justify-content: center;
     background-size: cover;
-    background-color: #f2f2f2
-    ;
+    background-color: #182432;
 }
 
 .Project .Title{
@@ -19,6 +18,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     justify-content: center;
     width: 100%;
     text-align: center;
+    color: #fff;
 }
 
 .Project .Title h2{
@@ -27,6 +27,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     padding-top: 30px;
     margin-bottom: 40px;
     padding: 30px 45px 0;
+    color: #fff;
 }
 
 .Project .Projects{
@@ -38,6 +39,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     align-items: center;
     /* padding: 0 100px; */
     width: 50%;
+    color: #fff;
      
 }
 
