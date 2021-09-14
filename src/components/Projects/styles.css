@@ -11,6 +11,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     justify-content: center;
     background-size: cover;
     background-color: #182432;
+    min-height: 750px;
 }
 
 .Project .Title{
@@ -24,9 +25,9 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
 .Project .Title h2{
     font-family: "Cinzel", sans-serif;
     font-size: 40px;
-    padding-top: 30px;
-    margin-bottom: 40px;
-    padding: 30px 45px 0;
+    padding-top: 50px;
+    /* margin-bottom: 40px; */
+    /* padding: 30px 45px 0; */
     color: #fff;
 }
 
@@ -37,8 +38,10 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     justify-content: space-around;
     background-size: cover;
     align-items: center;
-    /* padding: 0 100px; */
-    width: 50%;
+    /* padding: 0 100px 150px; */
+    padding: 0 100px;
+    min-height: 500px;
+    width: 100%;
     /* color: #fff; */
      
 }
@@ -160,10 +163,24 @@ padding-top: 250px; */
     opacity: 0;
 }
 
-.Projects .popup-view.active{
+.Projects .popup-view.on{
     opacity: 1;
     visibility: visible;
+
+    
 }
+
+/* .Project .Projects{
+    flex: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-size: cover;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    /* color: #fff; */
+     
 
 .Projects .popup-card{
     position: relative;
@@ -255,6 +272,9 @@ padding-top: 250px; */
         border-top-right-radius: 10px;
     }
 
+    .Project .Projects{
+        padding-bottom: 0px;
+    }
     .Projects .popup-card .project-img img{
         left: initial;
         max-width: 100%;
@@ -292,6 +312,7 @@ padding-top: 250px; */
 @media(max-width: 450px){
     .Project .Projects{
         width: 100%;
+        padding-bottom: 0px;
     }
     .Projects .popup-card .info{
         padding-top: 20px;

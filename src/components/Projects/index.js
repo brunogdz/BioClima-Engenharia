@@ -28,7 +28,7 @@ const Projects = () => {
         var closeBtn = document.querySelectorAll('.close-btn');
 
         var popup = function (popupClick) {
-            popViews[popupClick].classList.add('active');
+            popViews[popupClick].classList.add('on');
 
         }
         popupBtns.forEach((popupBtn, i) => {
@@ -40,7 +40,7 @@ const Projects = () => {
         closeBtn.forEach((closeBt) => {
             closeBt.addEventListener("click", () => {
                 popViews.forEach((popViews) => {
-                    popViews.classList.remove('active')
+                    popViews.classList.remove('on')
                 })
             })
         })
