@@ -54,7 +54,7 @@ const Work = () => {
                                     <img src={trab2} />
                                 </a>
                             </div>
-                            <h2>Criamos 3D</h2>
+                            <h2>Modelagem 3D</h2>
                         </div>
                     </div>
                     <div className="service col-md-4 col-sm-6 col-xs-12">

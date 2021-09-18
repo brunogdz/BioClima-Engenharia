@@ -57,17 +57,17 @@ const Navbar = () => {
                 </Icon>
                 <DropdownMenu>
                     <ul className="navigation">
-                        <li><Link spy={true} to="About">Sobre nós</Link></li>
-                        <li><a onClick={() => scroll.scrollTo(750)}>Trabalhos</a></li>
-                        <li><a href="#project">Projetos</a></li>
+                        <li><a onClick={() => scroll.scrollTo(632)}>Sobre nós</a></li>
+                        <li><a onClick={() => scroll.scrollTo(632)}>Trabalhos</a></li>
+                        <li><a onClick={() => scroll.scrollTo(4266)}>Projetos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </DropdownMenu>
             </DropdownContainer>
             <ul className="navigation">
                 <li><a onClick={() => scroll.scrollTo(850)}>Sobre nós</a></li>
-                <li><a onClick={() => scroll.scrollTo(850)}>Trabalhos</a></li>
-                <li><a href="#project">Projetos</a></li>
+                <li><a onClick={() => scroll.scrollTo(1770)}>Trabalhos</a></li>
+                <li><a onClick={() => scroll.scrollTo(2560)}>Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
