@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import Image1 from '../../assets/computer_.jpg';
-import Image2 from '../../assets/Image1_.jpg';
-import Image3 from '../../assets/meeting_.jpg';
-import Image4 from '../../assets/industry_.jpg';
+import Image1 from '../../assets/computer_.webp';
+import Image2 from '../../assets/Image1_.webp';
+import Image3 from '../../assets/meeting_.webp';
+import Image4 from '../../assets/industry_.webp';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
