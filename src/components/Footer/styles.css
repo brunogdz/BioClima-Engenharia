@@ -4,3 +4,9 @@
     color: #FFF;
     text-align: center;
 }
+
+.Footer .footer-left .social a img{
+    /* max-height: 48px; */
+    /* max-width: 48px; */
+    width: 52px;
+}
