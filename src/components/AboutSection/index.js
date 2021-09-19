@@ -38,10 +38,10 @@ const About = () => {
                 </div>
                 <div className="Images reveal">
                     <div className="image1">
-                        <img src={Image1} alt="Image One" />
+                        <img src={Image1} alt="" />
                     </div>
                     <div className="image2">
-                        <img src={Image2} alt="Image Two" />
+                        <img src={Image2} alt="" />
                     </div>
                 </div>
             </div>

@@ -5,15 +5,6 @@ import logo from '../../assets/logo.png';
 import { FaFacebook, FaYoutubeSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai'
 
-import logoMarca from '../../assets/icon.png'
-import email from '../../assets/redes sociais/email.png';
-import facebook from '../../assets/redes sociais/facebook.png';
-import linkD from '../../assets/redes sociais/linkedin.png';
-import youtube from '../../assets/redes sociais/youtube.png';
-import instagram from '../../assets/redes sociais/instagram.png';
-import { orange } from '@material-ui/core/colors';
-
-
 
 const Footer = () => {
     return (
@@ -35,10 +26,10 @@ const Footer = () => {
                 <li>
                     <h2>Atalhos</h2>
                     <ul className="box">
-                        <li><Link spy={true} to="About">Sobre nós</Link></li>
-                        <li><Link spy={true} to="Projects">Projetos</Link></li>
-                        <li><Link spy={true} to="Work">Trabalhos</Link></li>
-                        <li><Link spy={true} to="Footer">Contato</Link></li>
+                        <li><Link smooth={true} spy={true} to="About">Sobre nós</Link></li>
+                        <li><Link smooth={true} spy={true} to="Projects">Projetos</Link></li>
+                        <li><Link smooth={true} spy={true} to="Work">Trabalhos</Link></li>
+                        <li><Link smooth={true} spy={true} to="Footer">Contato</Link></li>
                     </ul>
                 </li>
                 <li className="services">

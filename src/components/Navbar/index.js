@@ -27,6 +27,10 @@ const Navbar = () => {
     const scrollToTop = () => {
         scroll.scrollToTop();
     }
+
+    const scrolltoBot = () => {
+        scroll.scrollToBottom();
+    }
     // function toggleMenu(){
     //     const menuToggle = document.querySelector('.menuToggle');
     //     const navigation = document.querySelector('.navigation');
@@ -34,14 +38,14 @@ const Navbar = () => {
     // }
     const changeBackground = () => {
         // console.log(window.scrollY)
-        if(window.scrollY >= 90){
+        if (window.scrollY >= 90) {
             setNavbar(true);
-        }else{
+        } else {
             setNavbar(false);
         }
     }
 
-    window.addEventListener('scroll',changeBackground);
+    window.addEventListener('scroll', changeBackground);
 
     return (
         <div className={navbar ? 'navbar active' : 'navbar'}>
@@ -60,15 +64,15 @@ const Navbar = () => {
                         <li><a onClick={() => scroll.scrollTo(632)}>Sobre nós</a></li>
                         <li><a onClick={() => scroll.scrollTo(632)}>Trabalhos</a></li>
                         <li><a onClick={() => scroll.scrollTo(4266)}>Projetos</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a onClick={() => scroll.scrollToBottom()}>Contato</a></li>
                     </ul>
                 </DropdownMenu>
             </DropdownContainer>
             <ul className="navigation">
-                <li><a onClick={() => scroll.scrollTo(850)}>Sobre nós</a></li>
-                <li><a onClick={() => scroll.scrollTo(1770)}>Trabalhos</a></li>
-                <li><a onClick={() => scroll.scrollTo(2560)}>Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><Link smooth={true} spy={true} to="About">Sobre nós</Link></li>
+                <li><Link smooth={true} spy={true} to="Projects">Projetos</Link></li>
+                <li><Link smooth={true} spy={true} to="Work">Trabalhos</Link></li>
+                <li><Link smooth={true} spy={true} to="Footer">Contato</Link></li>
             </ul>
         </div>
     )

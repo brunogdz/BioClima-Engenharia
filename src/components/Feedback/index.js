@@ -8,7 +8,6 @@ import image2 from '../../assets/feedbacks/feed2.jpg';
 import image3 from '../../assets/feedbacks/feed3.jpg';
 import image4 from '../../assets/feedbacks/feed4.jpg';
 import { Avatar } from '@material-ui/core';
-import { width } from '@material-ui/system';
 
 
 

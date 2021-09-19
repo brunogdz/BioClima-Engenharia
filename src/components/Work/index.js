@@ -40,7 +40,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a >
                                     <img src={trab1} />
                                 </a>
                             </div>
@@ -50,7 +50,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a >
                                     <img src={trab2} />
                                 </a>
                             </div>
@@ -60,7 +60,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a >
                                     <img src={trab3} />
                                 </a>
                             </div>
@@ -70,7 +70,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a >
                                     <img src={trab4} />
                                 </a>
                             </div>
@@ -80,7 +80,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a >
                                     <img src={trab5} />
                                 </a>
                             </div>
@@ -90,7 +90,7 @@ const Work = () => {
                     <div className="service col-md-4 col-sm-6 col-xs-12">
                         <div className="content">
                             <div className="image">
-                                <a href="#">
+                                <a>
                                     <img src={trab6} />
                                 </a>
                             </div>
