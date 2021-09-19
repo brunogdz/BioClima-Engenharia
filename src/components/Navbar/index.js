@@ -9,7 +9,7 @@ import { FaTimes } from 'react-icons/fa';
 /**
  * IMAGENS
  */
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.png'
 
 /**
  * CSS
