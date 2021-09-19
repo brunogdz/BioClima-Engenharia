@@ -38,8 +38,7 @@ import Proj3 from '../../assets/projetos/projeto3.jpeg'; */
     justify-content: space-around;
     background-size: cover;
     align-items: center;
-    /* padding: 0 100px 150px; */
-    padding: 0 100px;
+    padding: 0 70px;
     min-height: 500px;
     width: 100%;
     /* color: #fff; */
