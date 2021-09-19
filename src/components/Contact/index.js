@@ -1,6 +1,7 @@
 import './styles.css'
 import Lottie from 'react-lottie';
-import email from '../../assets/contact/email.json'
+// import email from '../../assets/contact/email.json';
+import email from '../../assets/contact/b.json'
 
 const defaultOptions = {
     loop: true,
