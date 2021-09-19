@@ -1,0 +1,60 @@
+/* ../../assets/video/backVideo.webp */
+.VideoSection{
+    width: 100%;
+    height: 60vh;
+    background: url('../../assets/video/backVideo.webp') no-repeat center / cover;;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.black-opacity {
+    background: rgba(38,37,43,0.60);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+.VideoSection .content p:nth-child(1){
+    font-family: serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #fff;
+}
+
+.VideoSection .content h2 {
+    padding-top: 0.765rem;
+    line-height: 2.8765rem;
+    font-size: 38px;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+}
+/*  */
+.VideoSection .content{
+    position: relative;
+    padding: 0 3rem;
+}      
+
+        
+
+.VideoSection .content-video {
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            
+}
+.VideoSection .content-video .video-hide{
+    max-width: 75%; 
+    margin: 0 auto;
+}
+.VideoSection .content-video p {
+    color: #fff;
+}
+.VideoSection .content-video-icon {
+    margin-right: 1rem;
+}
+            
+

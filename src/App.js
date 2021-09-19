@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Feedback from './components/Feedback';
 import Work from './components/Work';
+import VideoSection from './components/VideoSection';
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
       <Work/>
       <Projects/>
       <Feedback/>
+      <VideoSection/>
       <Footer/>
     </div>
   );
