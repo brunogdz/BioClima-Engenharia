@@ -14,11 +14,11 @@ const Footer = () => {
                 <p>Bio Clima Engenharia para todos os serviços, excelência em primeiro lugar!</p>
 
                 <div className="social">
-                    <a href="https://www.gmail.com" target="_blank"><AiOutlineMail color='orange' size={24} /></a>
-                    <a href="https://www.facebook.com" target="_blank"><FaFacebook color='orange' size={24} /></a>
-                    <a href="https://www.linkedin.com" target="_blank"><FaLinkedin color='orange' size={24} /></a>
-                    <a href="https://www.youtube.com" target="_blank"><FaYoutubeSquare color='orange' size={24} /></a>
-                    <a href="https://www.instagram.com" target="_blank"><FaInstagramSquare color='orange' size={24} /></a>
+                    <a href="https://www.gmail.com" target={"_blank"}><AiOutlineMail color='orange' size={24} /></a>
+                    <a href="https://www.facebook.com" target={"_blank"}><FaFacebook color='orange' size={24} /></a>
+                    <a href="https://www.linkedin.com" target={"_blank"}><FaLinkedin color='orange' size={24} /></a>
+                    <a href="https://www.youtube.com" target={"_blank"}><FaYoutubeSquare color='orange' size={24} /></a>
+                    <a href="https://www.instagram.com" target={"_blank"}><FaInstagramSquare color='orange' size={24} /></a>
                 </div>
 
             </div>

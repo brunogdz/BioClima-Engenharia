@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Feedback from './components/Feedback';
 import Work from './components/Work';
 import VideoSection from './components/VideoSection';
+import Contact from './components/Contact';
 function App() {
   
   return (
@@ -18,6 +19,7 @@ function App() {
       <Projects/>
       <Feedback/>
       <VideoSection/>
+      <Contact/>
       <Footer/>
     </div>
   );

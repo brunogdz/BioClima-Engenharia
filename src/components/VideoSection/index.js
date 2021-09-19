@@ -10,7 +10,7 @@ const VideoSection = () => {
                 <h2>Somos lider em <br /> Automação Industrial</h2>
                 <div className="content-video">
                     {/* <a href="https://www.youtube.com/embed/tlUcmD0zPI4"> */}
-                    <a href="https://www.youtube.com/watch?v=kxPCFljwJws" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=kxPCFljwJws" target={"_blank"}>
                         <FiPlayCircle className="content-video-icon" color={"#f2d046"} size={38} />
                     </a>
 

@@ -1,0 +1,41 @@
+.Contact{
+    width: 100%;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #35495E;
+    align-items: center;
+    padding: 49px;
+}
+.Contact h2 {
+    padding-top: 0.765rem;
+    line-height: 2.8765rem;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+}
+
+.Contact .button{
+    width: 159px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #44bc84;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact .button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.Contact .button p{
+    text-align: center;
+}
